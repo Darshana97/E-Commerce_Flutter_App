@@ -7,7 +7,7 @@ void main() {
       child: Column(
         children: <Widget>[
 
-          Icon(Icons.person),
+
           Text("user"),
           Icon(Icons.person),
         ],
