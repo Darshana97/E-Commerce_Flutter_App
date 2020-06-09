@@ -4,7 +4,8 @@ void main() {
   runApp(new MaterialApp(
     home: Container(
       color: Colors.white,
-      child: ListView(
+      child: GridView.count(
+        crossAxisCount: 4,
         children: <Widget>[
           Text("1"),
           Text("2"),
