@@ -154,7 +154,6 @@ class _HomePageState extends State<HomePage> {
       body: ListView(
         children: <Widget>[
           image_carousel,
-
           Padding(
             padding: EdgeInsets.all(8.0),
             child: Text(
@@ -163,23 +162,19 @@ class _HomePageState extends State<HomePage> {
                   TextStyle(fontWeight: FontWeight.bold, color: Colors.black),
             ),
           ),
-
           HorizontalList(),
-
           Padding(
             padding: EdgeInsets.all(10.0),
             child: Text(
               "Recent Products",
               style:
-              TextStyle(fontWeight: FontWeight.bold, color: Colors.black),
+                  TextStyle(fontWeight: FontWeight.bold, color: Colors.black),
             ),
           ),
-
           Container(
             height: 320.0,
             child: Products(),
           )
-
         ],
       ),
     );
