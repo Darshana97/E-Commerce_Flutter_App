@@ -16,7 +16,7 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
-//    Widget image_carousel = Container();
+    Widget image_carousel = Container();
 
     return Scaffold(
       appBar: AppBar(
