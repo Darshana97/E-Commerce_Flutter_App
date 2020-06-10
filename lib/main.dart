@@ -19,7 +19,12 @@ class _HomePageState extends State<HomePage> {
       appBar: AppBar(
         title: Text("My Shop"),
         centerTitle: true,
+        actions: <Widget>[
+          IconButton(icon: Icon(Icons.search,color: Colors.white,), onPressed: (){} ),
+          IconButton(icon: Icon(Icons.shopping_cart,color: Colors.white,), onPressed: (){} )
+        ],
       ),
+
     );
   }
 }
