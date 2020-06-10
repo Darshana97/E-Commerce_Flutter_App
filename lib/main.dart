@@ -149,7 +149,17 @@ class _HomePageState extends State<HomePage> {
         ),
       ),
       body: ListView(
-        children: <Widget>[image_carousel],
+        children: <Widget>[
+          image_carousel,
+          Padding(
+            padding: EdgeInsets.all(8.0),
+            child: Text(
+              "Categories",
+              style:
+                  TextStyle(fontWeight: FontWeight.bold, color: Colors.black),
+            ),
+          )
+        ],
       ),
     );
   }
