@@ -29,8 +29,10 @@ class _HomePageState extends State<HomePage> {
           AssetImage("images/w4.jpeg"),
         ],
         autoplay: true,
-        animationCurve: Curves.fastOutSlowIn,
-        animationDuration: Duration(milliseconds: 1000),
+//        animationCurve: Curves.fastOutSlowIn,
+//        animationDuration: Duration(milliseconds: 1000),
+        dotSize: 4.0,
+        indicatorBgPadding: 2.0,
       ),
     );
 
