@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:carousel_pro/carousel_pro.dart';
 
+import 'package:flutter_ecom/components/horizontal_listview.dart';
+
 void main() {
   runApp(MaterialApp(
     debugShowCheckedModeBanner: false,
