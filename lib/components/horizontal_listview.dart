@@ -63,7 +63,7 @@ class Category extends StatelessWidget {
               height: 80.0,
             ),
             subtitle: Container(
-                alignment: Alignment.topCenter, child: Text(image_caption)),
+                alignment: Alignment.topCenter, child: Text(image_caption,style: TextStyle(color: Colors.redAccent,fontWeight: FontWeight.bold),)),
           ),
         ),
       ),
