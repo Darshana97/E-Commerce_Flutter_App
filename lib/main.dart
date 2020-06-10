@@ -153,6 +153,7 @@ class _HomePageState extends State<HomePage> {
       body: ListView(
         children: <Widget>[
           image_carousel,
+
           Padding(
             padding: EdgeInsets.all(8.0),
             child: Text(
@@ -160,7 +161,10 @@ class _HomePageState extends State<HomePage> {
               style:
                   TextStyle(fontWeight: FontWeight.bold, color: Colors.black),
             ),
-          )
+          ),
+
+          HorizontalList(),
+
         ],
       ),
     );
