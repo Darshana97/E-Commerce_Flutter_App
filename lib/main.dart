@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 void main(){
   runApp(MaterialApp(
+    debugShowCheckedModeBanner: false,
     home: HomePage(),
   ));
 }
@@ -17,6 +18,7 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       appBar: AppBar(
         title: Text("My Shop"),
+        centerTitle: true,
       ),
     );
   }
