@@ -9,9 +9,15 @@ class _ProductsState extends State<Products> {
   var product_list = [
     {
       "name": "Blazer",
-      "picture": "images/products/",
-      "old_price": "",
-      "price": ""
+      "picture": "images/products/blazer1.jpeg",
+      "old_price": 120,
+      "price": 85,
+    },
+    {
+      "name": "Red dress",
+      "picture": "images/products/dress1.jpeg",
+      "old_price": 100,
+      "price": 50,
     }
   ];
 
