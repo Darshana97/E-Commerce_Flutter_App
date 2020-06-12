@@ -212,6 +212,29 @@ class _ProductDetailsState extends State<ProductDetails> {
                   "Product name",
                   style: TextStyle(color: Colors.grey),
                 ),
+              ),
+              Padding(padding: EdgeInsets.all(5.0),child: Text(widget.product_detail_name),)
+            ],
+          ),
+          Row(
+            children: <Widget>[
+              Padding(
+                padding: EdgeInsets.fromLTRB(12.0, 5.0, 5.0, 5.0),
+                child: Text(
+                  "Product brand",
+                  style: TextStyle(color: Colors.grey),
+                ),
+              )
+            ],
+          ),
+          Row(
+            children: <Widget>[
+              Padding(
+                padding: EdgeInsets.fromLTRB(12.0, 5.0, 5.0, 5.0),
+                child: Text(
+                  "Product condition",
+                  style: TextStyle(color: Colors.grey),
+                ),
               )
             ],
           )
