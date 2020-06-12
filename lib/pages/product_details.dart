@@ -224,7 +224,8 @@ class _ProductDetailsState extends State<ProductDetails> {
                   "Product brand",
                   style: TextStyle(color: Colors.grey),
                 ),
-              )
+              ),
+              Padding(padding: EdgeInsets.all(5.0),child: Text("Brand X"),)
             ],
           ),
           Row(
@@ -235,7 +236,8 @@ class _ProductDetailsState extends State<ProductDetails> {
                   "Product condition",
                   style: TextStyle(color: Colors.grey),
                 ),
-              )
+              ),
+              Padding(padding: EdgeInsets.all(5.0),child: Text("NEW"),)
             ],
           )
         ],
