@@ -52,18 +52,75 @@ class _ProductDetailsState extends State<ProductDetails> {
               footer: Container(
                 color: Colors.white70,
                 child: ListTile(
-                  leading: Text(widget.product_detail_name,style: TextStyle(fontWeight: FontWeight.bold,fontSize: 16.0),),
+                  leading: Text(
+                    widget.product_detail_name,
+                    style:
+                        TextStyle(fontWeight: FontWeight.bold, fontSize: 16.0),
+                  ),
                   title: Row(
                     children: <Widget>[
-                      Expanded(child: Text("\$${widget.product_detail_old_price}",style: TextStyle(color: Colors.orangeAccent,decoration: TextDecoration.lineThrough),)),
-                      Expanded(child: Text("\$${widget.product_detail_new_price}",style: TextStyle(fontWeight: FontWeight.bold,color: Colors.pink),))
-
+                      Expanded(
+                          child: Text(
+                        "\$${widget.product_detail_old_price}",
+                        style: TextStyle(
+                            color: Colors.orangeAccent,
+                            decoration: TextDecoration.lineThrough),
+                      )),
+                      Expanded(
+                          child: Text(
+                        "\$${widget.product_detail_new_price}",
+                        style: TextStyle(
+                            fontWeight: FontWeight.bold, color: Colors.pink),
+                      ))
                     ],
                   ),
                 ),
               ),
             ),
           ),
+          Row(
+            children: <Widget>[
+              Expanded(
+                  child: MaterialButton(
+                onPressed: () {},
+                color: Colors.white,
+                textColor: Colors.grey,
+                    elevation: 0.2,
+                child: Row(
+                  children: <Widget>[
+                    Expanded(child: Text("Size")),
+                    Expanded(child: Icon(Icons.arrow_drop_down))
+                  ],
+                ),
+              )),
+              Expanded(
+                  child: MaterialButton(
+                    onPressed: () {},
+                    color: Colors.white,
+                    textColor: Colors.grey,
+                    elevation: 0.2,
+                    child: Row(
+                      children: <Widget>[
+                        Expanded(child: Text("Color")),
+                        Expanded(child: Icon(Icons.arrow_drop_down))
+                      ],
+                    ),
+                  )),
+              Expanded(
+                  child: MaterialButton(
+                    onPressed: () {},
+                    color: Colors.white,
+                    textColor: Colors.grey,
+                    elevation: 0.2,
+                    child: Row(
+                      children: <Widget>[
+                        Expanded(child: Text("Qty")),
+                        Expanded(child: Icon(Icons.arrow_drop_down))
+                      ],
+                    ),
+                  ))
+            ],
+          )
         ],
       ),
     );
