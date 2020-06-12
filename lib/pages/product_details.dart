@@ -112,7 +112,24 @@ class _ProductDetailsState extends State<ProductDetails> {
               )),
               Expanded(
                   child: MaterialButton(
-                onPressed: () {},
+                    onPressed: () {
+                      showDialog(
+                          context: context,
+                          builder: (context) {
+                            return AlertDialog(
+                              title: Text("Color"),
+                              content: Text("Choose a color"),
+                              actions: <Widget>[
+                                MaterialButton(
+                                  onPressed: () {
+                                    Navigator.of(context).pop(context);
+                                  },
+                                  child: Text("close"),
+                                )
+                              ],
+                            );
+                          });
+                    },
                 color: Colors.white,
                 textColor: Colors.grey,
                 elevation: 0.2,
@@ -125,7 +142,24 @@ class _ProductDetailsState extends State<ProductDetails> {
               )),
               Expanded(
                   child: MaterialButton(
-                onPressed: () {},
+                    onPressed: () {
+                      showDialog(
+                          context: context,
+                          builder: (context) {
+                            return AlertDialog(
+                              title: Text("Quantity"),
+                              content: Text("Choose the quantity"),
+                              actions: <Widget>[
+                                MaterialButton(
+                                  onPressed: () {
+                                    Navigator.of(context).pop(context);
+                                  },
+                                  child: Text("close"),
+                                )
+                              ],
+                            );
+                          });
+                    },
                 color: Colors.white,
                 textColor: Colors.grey,
                 elevation: 0.2,
