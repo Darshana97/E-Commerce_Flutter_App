@@ -58,7 +58,7 @@ class Single_prod extends StatelessWidget {
           tag: prod_name,
           child: Material(
             child: InkWell(
-              onTap: () {},
+              onTap: ()>Navigator.of(context).push(),
               child: GridTile(
                   footer: Container(
                     color: Colors.white70,
