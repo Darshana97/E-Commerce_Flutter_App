@@ -135,7 +135,7 @@ class _HomePageState extends State<HomePage> {
                 title: Text('Settings'),
                 leading: Icon(
                   Icons.settings,
-                  color: Colors.black,
+
                 ),
               ),
             ),
@@ -145,7 +145,7 @@ class _HomePageState extends State<HomePage> {
                 title: Text('About'),
                 leading: Icon(
                   Icons.help,
-                  color: Colors.green,
+
                 ),
               ),
             )
