@@ -213,7 +213,10 @@ class _ProductDetailsState extends State<ProductDetails> {
                   style: TextStyle(color: Colors.grey),
                 ),
               ),
-              Padding(padding: EdgeInsets.all(5.0),child: Text(widget.product_detail_name),)
+              Padding(
+                padding: EdgeInsets.all(5.0),
+                child: Text(widget.product_detail_name),
+              )
             ],
           ),
           Row(
@@ -225,7 +228,10 @@ class _ProductDetailsState extends State<ProductDetails> {
                   style: TextStyle(color: Colors.grey),
                 ),
               ),
-              Padding(padding: EdgeInsets.all(5.0),child: Text("Brand X"),)
+              Padding(
+                padding: EdgeInsets.all(5.0),
+                child: Text("Brand X"),
+              )
             ],
           ),
           Row(
@@ -237,7 +243,10 @@ class _ProductDetailsState extends State<ProductDetails> {
                   style: TextStyle(color: Colors.grey),
                 ),
               ),
-              Padding(padding: EdgeInsets.all(5.0),child: Text("NEW"),)
+              Padding(
+                padding: EdgeInsets.all(5.0),
+                child: Text("NEW"),
+              )
             ],
           )
         ],
