@@ -112,24 +112,24 @@ class _ProductDetailsState extends State<ProductDetails> {
               )),
               Expanded(
                   child: MaterialButton(
-                    onPressed: () {
-                      showDialog(
-                          context: context,
-                          builder: (context) {
-                            return AlertDialog(
-                              title: Text("Color"),
-                              content: Text("Choose a color"),
-                              actions: <Widget>[
-                                MaterialButton(
-                                  onPressed: () {
-                                    Navigator.of(context).pop(context);
-                                  },
-                                  child: Text("close"),
-                                )
-                              ],
-                            );
-                          });
-                    },
+                onPressed: () {
+                  showDialog(
+                      context: context,
+                      builder: (context) {
+                        return AlertDialog(
+                          title: Text("Color"),
+                          content: Text("Choose a color"),
+                          actions: <Widget>[
+                            MaterialButton(
+                              onPressed: () {
+                                Navigator.of(context).pop(context);
+                              },
+                              child: Text("close"),
+                            )
+                          ],
+                        );
+                      });
+                },
                 color: Colors.white,
                 textColor: Colors.grey,
                 elevation: 0.2,
@@ -142,24 +142,24 @@ class _ProductDetailsState extends State<ProductDetails> {
               )),
               Expanded(
                   child: MaterialButton(
-                    onPressed: () {
-                      showDialog(
-                          context: context,
-                          builder: (context) {
-                            return AlertDialog(
-                              title: Text("Quantity"),
-                              content: Text("Choose the quantity"),
-                              actions: <Widget>[
-                                MaterialButton(
-                                  onPressed: () {
-                                    Navigator.of(context).pop(context);
-                                  },
-                                  child: Text("close"),
-                                )
-                              ],
-                            );
-                          });
-                    },
+                onPressed: () {
+                  showDialog(
+                      context: context,
+                      builder: (context) {
+                        return AlertDialog(
+                          title: Text("Quantity"),
+                          content: Text("Choose the quantity"),
+                          actions: <Widget>[
+                            MaterialButton(
+                              onPressed: () {
+                                Navigator.of(context).pop(context);
+                              },
+                              child: Text("close"),
+                            )
+                          ],
+                        );
+                      });
+                },
                 color: Colors.white,
                 textColor: Colors.grey,
                 elevation: 0.2,
@@ -195,6 +195,19 @@ class _ProductDetailsState extends State<ProductDetails> {
                   onPressed: () {})
             ],
           ),
+          Divider(color: Colors.red,),
+          ListTile(
+            title: Text("Product Details"),
+            subtitle: Text(
+                "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."),
+
+          ),
+          Divider(),
+          Row(
+            children: <Widget>[
+              Padding(padding: EdgeInsets.fromLTRB(12.0, 5.0, 5.0, 5.0),child: Text("Product name",style: TextStyle(color: Colors.grey),),)
+            ],
+          )
         ],
       ),
     );
