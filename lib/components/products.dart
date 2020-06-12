@@ -53,6 +53,28 @@ class Single_prod extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Card(
+      child: Hero(
+          tag: prod_name,
+          child: Material(
+            child: InkWell(
+              onTap: () {},
+              child: GridTile(
+                  footer: Container(
+                    color: Colors.white,
+                    child: ListTile(
+                      leading: Text(
+                        prod_name,
+                        style: TextStyle(fontWeight: FontWeight.bold),
+                      ),
+                    ),
+                  ),
+                  child: Image.asset(
+                    prod_picture,
+                    fit: BoxFit.cover,
+                  )),
+            ),
+          )),
+    );
   }
 }
