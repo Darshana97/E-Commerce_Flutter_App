@@ -3,6 +3,7 @@ import 'package:carousel_pro/carousel_pro.dart';
 
 import 'package:flutter_ecom/components/horizontal_listview.dart';
 import 'package:flutter_ecom/components/products.dart';
+import 'package:flutter_ecom/pages/cart.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -58,7 +59,9 @@ class _HomePageState extends State<HomePage> {
                 Icons.shopping_cart,
                 color: Colors.white,
               ),
-              onPressed: () {})
+              onPressed: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context)=> Cart()));
+              })
         ],
       ),
       drawer: Drawer(
