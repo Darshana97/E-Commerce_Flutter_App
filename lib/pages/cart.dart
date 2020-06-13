@@ -21,10 +21,8 @@ class _CartState extends State<Cart> {
                 color: Colors.white,
               ),
               onPressed: () {}),
-
         ],
       ),
     );
   }
 }
-
