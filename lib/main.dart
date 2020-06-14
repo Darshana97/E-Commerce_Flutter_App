@@ -112,7 +112,9 @@ class _HomePageState extends State<HomePage> {
               ),
             ),
             InkWell(
-              onTap: () {},
+              onTap: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context)=>Cart()));
+              },
               child: ListTile(
                 title: Text('Shopping Cart'),
                 leading: Icon(
