@@ -60,7 +60,8 @@ class _HomePageState extends State<HomePage> {
                 color: Colors.white,
               ),
               onPressed: () {
-                Navigator.push(context, MaterialPageRoute(builder: (context)=> Cart()));
+                Navigator.push(
+                    context, MaterialPageRoute(builder: (context) => Cart()));
               })
         ],
       ),
@@ -113,7 +114,8 @@ class _HomePageState extends State<HomePage> {
             ),
             InkWell(
               onTap: () {
-                Navigator.push(context, MaterialPageRoute(builder: (context)=>Cart()));
+                Navigator.push(
+                    context, MaterialPageRoute(builder: (context) => Cart()));
               },
               child: ListTile(
                 title: Text('Shopping Cart'),
@@ -140,7 +142,6 @@ class _HomePageState extends State<HomePage> {
                 title: Text('Settings'),
                 leading: Icon(
                   Icons.settings,
-
                 ),
               ),
             ),
@@ -150,7 +151,6 @@ class _HomePageState extends State<HomePage> {
                 title: Text('About'),
                 leading: Icon(
                   Icons.help,
-
                 ),
               ),
             )
