@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'package:flutter_ecom/components/cart_products.dart';
+
 class Cart extends StatefulWidget {
   @override
   _CartState createState() => _CartState();
