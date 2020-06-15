@@ -25,6 +25,7 @@ class _CartState extends State<Cart> {
               onPressed: () {}),
         ],
       ),
+      body: Cart_products(),
       bottomNavigationBar: Container(
         color: Colors.white,
         child: Row(
