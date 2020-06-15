@@ -30,9 +30,16 @@ class _Cart_productsState extends State<Cart_products> {
   @override
   Widget build(BuildContext context) {
     return ListView.builder(
-        itemCount: 3,
+        itemCount: Products_on_the_cart.length,
         itemBuilder: (context, index) {
-          return Text("aaa");
+          return Single_cart_products(
+            cart_prod_name: Products_on_the_cart[index]["name"],
+            cart_prod_color: Products_on_the_cart[index]["color"],
+            cart_prod_qty: Products_on_the_cart[index]["quantity"],
+            cart_prod_size: Products_on_the_cart[index]["size"],
+            cart_prod_price: Products_on_the_cart[index]["price"],
+            cart_prod_picture: Products_on_the_cart[index]["picture"],
+          );
         });
   }
 }
@@ -57,7 +64,11 @@ class Single_cart_products extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Card(
+      child: ListTile(
+        title: Text(cart_prod_name),
+      ),
+    );
   }
 }
 
