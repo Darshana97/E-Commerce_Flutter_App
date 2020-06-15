@@ -36,3 +36,19 @@ class _Cart_productsState extends State<Cart_products> {
         });
   }
 }
+
+class Single_cart_products extends StatelessWidget {
+
+  final prod_name;
+  final prod_picture;
+  final prod_price;
+  final prod_size;
+  final prod_color;
+  final prod_qty;
+
+  @override
+  Widget build(BuildContext context) {
+    return Container();
+  }
+}
+
