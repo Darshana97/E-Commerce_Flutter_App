@@ -68,14 +68,23 @@ class Single_cart_products extends StatelessWidget {
             Row(
               children: <Widget>[
                 Padding(
-                  padding: const EdgeInsets.all(8.0),
+                  padding: const EdgeInsets.all(0.0),
                   child: Text("Size:"),
                 ),
                 Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: Text(cart_prod_size),
+                  padding: const EdgeInsets.all(6.0),
+                  child: Text(cart_prod_size,style: TextStyle(color: Colors.red),),
+                ),
+                Padding(padding: EdgeInsets.fromLTRB(22.0, 8.0, 8.0, 8.0),child: Text("Color:"),),
+                Padding(
+                  padding: const EdgeInsets.all(6.0),
+                  child: Text(cart_prod_color,style: TextStyle(color: Colors.red),),
                 )
               ],
+            ),
+            Container(
+              alignment: Alignment.topLeft,
+              child: Text("\$${cart_prod_price}",style: TextStyle(fontSize: 17.0,fontWeight: FontWeight.bold),),
             )
           ],
         ),
