@@ -62,6 +62,11 @@ class Single_cart_products extends StatelessWidget {
   Widget build(BuildContext context) {
     return Card(
       child: ListTile(
+        leading: Image.asset(
+          cart_prod_picture,
+          width: 80.0,
+          height: 80.0,
+        ),
         title: Text(cart_prod_name),
         subtitle: Column(
           children: <Widget>[
