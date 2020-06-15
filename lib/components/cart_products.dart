@@ -8,6 +8,8 @@ class Cart_products extends StatefulWidget {
 class _Cart_productsState extends State<Cart_products> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return ListView.builder(itemCount: 3, itemBuilder: (context, index) {
+      return Text("aaa");
+    });
   }
 }
