@@ -11,20 +11,18 @@ class _Cart_productsState extends State<Cart_products> {
       "name": "Blazer",
       "picture": "images/products/blazer1.jpeg",
       "price": 85,
-      "size":"M",
-      "color":"Black",
-      "quantity":1
+      "size": "M",
+      "color": "Black",
+      "quantity": 1
     },
     {
       "name": "Shoes",
       "picture": "images/products/hills1.jpeg",
       "price": 50,
-      "size":"7",
-      "color":"Red",
-      "quantity":1
+      "size": "7",
+      "color": "Red",
+      "quantity": 1
     }
-
-
   ];
 
   @override
@@ -45,7 +43,6 @@ class _Cart_productsState extends State<Cart_products> {
 }
 
 class Single_cart_products extends StatelessWidget {
-
   final cart_prod_name;
   final cart_prod_picture;
   final cart_prod_price;
@@ -53,22 +50,36 @@ class Single_cart_products extends StatelessWidget {
   final cart_prod_color;
   final cart_prod_qty;
 
-  Single_cart_products({
-    this.cart_prod_name,
-    this.cart_prod_picture,
-    this.cart_prod_price,
-    this.cart_prod_size,
-    this.cart_prod_color,
-    this.cart_prod_qty
-});
+  Single_cart_products(
+      {this.cart_prod_name,
+      this.cart_prod_picture,
+      this.cart_prod_price,
+      this.cart_prod_size,
+      this.cart_prod_color,
+      this.cart_prod_qty});
 
   @override
   Widget build(BuildContext context) {
     return Card(
       child: ListTile(
         title: Text(cart_prod_name),
+        subtitle: Column(
+          children: <Widget>[
+            Row(
+              children: <Widget>[
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Text("Size:"),
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Text(cart_prod_size),
+                )
+              ],
+            )
+          ],
+        ),
       ),
     );
   }
 }
-
