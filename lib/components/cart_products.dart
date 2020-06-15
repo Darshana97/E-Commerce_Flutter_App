@@ -39,12 +39,21 @@ class _Cart_productsState extends State<Cart_products> {
 
 class Single_cart_products extends StatelessWidget {
 
-  final prod_name;
-  final prod_picture;
-  final prod_price;
-  final prod_size;
-  final prod_color;
-  final prod_qty;
+  final cart_prod_name;
+  final cart_prod_picture;
+  final cart_prod_price;
+  final cart_prod_size;
+  final cart_prod_color;
+  final cart_prod_qty;
+
+  Single_cart_products({
+    this.cart_prod_name,
+    this.cart_prod_picture,
+    this.cart_prod_price,
+    this.cart_prod_size,
+    this.cart_prod_color,
+    this.cart_prod_qty
+});
 
   @override
   Widget build(BuildContext context) {
