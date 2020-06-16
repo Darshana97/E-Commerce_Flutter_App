@@ -61,7 +61,7 @@ class Single_cart_products extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.fromLTRB(0.0,10,0,5),
+      padding: const EdgeInsets.fromLTRB(0.0, 10, 0, 5),
       child: Card(
         child: ListTile(
           leading: Image.asset(
@@ -108,14 +108,13 @@ class Single_cart_products extends StatelessWidget {
                       color: Colors.red),
                 ),
               ),
-
             ],
           ),
           trailing: Column(
             children: <Widget>[
 //              IconButton(icon: Icon(Icons.arrow_drop_up), onPressed: (){}),
               Text("$cart_prod_qty"),
-              IconButton(icon: Icon(Icons.arrow_drop_down), onPressed: (){})
+              IconButton(icon: Icon(Icons.arrow_drop_down), onPressed: () {})
             ],
           ),
         ),
