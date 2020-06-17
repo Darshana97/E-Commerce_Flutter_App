@@ -79,18 +79,18 @@ class Single_cart_products extends StatelessWidget {
                     child: Text("Size:"),
                   ),
                   Padding(
-                    padding: const EdgeInsets.all(10.0),
+                    padding: const EdgeInsets.all(5.0),
                     child: Text(
                       cart_prod_size,
                       style: TextStyle(color: Colors.red),
                     ),
                   ),
                   Padding(
-                    padding: EdgeInsets.fromLTRB(20.0, 8.0, 8.0, 8.0),
+                    padding: EdgeInsets.fromLTRB(10.0, 10.0, 4.0, 8.0),
                     child: Text("Color:"),
                   ),
                   Padding(
-                    padding: const EdgeInsets.all(6.0),
+                    padding: const EdgeInsets.all(0.0),
                     child: Text(
                       cart_prod_color,
                       style: TextStyle(color: Colors.red),
@@ -111,6 +111,7 @@ class Single_cart_products extends StatelessWidget {
             ],
           ),
           trailing: Column(
+
             children: <Widget>[
 //              IconButton(icon: Icon(Icons.arrow_drop_up), onPressed: (){}),
               Text("$cart_prod_qty"),
