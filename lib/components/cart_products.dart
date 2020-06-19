@@ -110,13 +110,16 @@ class Single_cart_products extends StatelessWidget {
               ),
             ],
           ),
-          trailing: Column(
+          trailing: Container(
+            height: 100.0,
+            child: Column(
 
-            children: <Widget>[
+              children: <Widget>[
 //              IconButton(icon: Icon(Icons.arrow_drop_up), onPressed: (){}),
-              Text("$cart_prod_qty"),
-              IconButton(icon: Icon(Icons.arrow_drop_down), onPressed: () {})
-            ],
+                Text("$cart_prod_qty"),
+                IconButton(icon: Icon(Icons.arrow_drop_down), onPressed: () {})
+              ],
+            ),
           ),
         ),
       ),
