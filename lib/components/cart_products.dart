@@ -113,7 +113,6 @@ class Single_cart_products extends StatelessWidget {
           trailing: Container(
             height: 100.0,
             child: Column(
-
               children: <Widget>[
 //              IconButton(icon: Icon(Icons.arrow_drop_up), onPressed: (){}),
                 Text("$cart_prod_qty"),
