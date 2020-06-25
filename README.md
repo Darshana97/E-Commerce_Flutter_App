@@ -1,4 +1,4 @@
-# flutter_ecom
+# flutter_ecommerce app
 
 A new Flutter application.
 
