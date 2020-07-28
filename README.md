@@ -1,4 +1,4 @@
-# flutter_e-commerce app
+# flutter_e-commerce app UI
 
 A new Flutter application.
 
